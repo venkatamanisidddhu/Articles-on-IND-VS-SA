@@ -1,0 +1,319 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+nav {
+    background-color: rgb(245, 249, 249);
+    height: 90px;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin-top: 30px;
+    margin-right: 100px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 2px 4px;
+    font-size: 20px;
+    color: rgb(97, 97, 97);
+    margin: 0px 20px;
+}
+
+nav ul li a:hover {
+    border-top: 2.3px solid rgb(87, 84, 78);
+    border-bottom: 2.3px solid rgb(72, 70, 66);
+}
+
+.logo img {
+    width: 113px;
+    height: 120px;
+    margin: -9px 0px 0px -8px;
+}
+
+.main1 {
+    margin-top: 90px;
+    position: static;
+}
+
+.head {
+    margin: 110px 0px 0px 0px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: rgb(45, 46, 46);
+}
+
+.score-card {
+    background: #2d34b4 url('/img/liveBlog-Web.png') no-repeat;
+    background-size: 100% 100%;
+    border-radius: 12px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, .3);
+    max-width: 800px;
+    min-height: 90px;
+    position: sticky;
+    top: 90px;
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0px auto 0px auto;
+    z-index: 1;
+}
+
+.card-teams {
+    align-items: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 0 16px rgba(0, 0, 0, .3);
+    margin: 0 auto 9px;
+    border-radius: 12px;
+    padding: 8px 40px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: Lato, sans-serif;
+    box-sizing: border-box;
+    color: white;
+}
+
+.cardstatus {
+    width: 100%;
+    margin-bottom: -9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.cricResults {
+    background-color: rgb(9, 176, 9);
+    border-radius: 10px;
+    padding: 0px 7px;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 700;
+    border: 1px solid rgb(137, 213, 109);
+}
+
+.cardmsg {
+    color: yellow;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.carddetails {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.team {
+    display: flex;
+    align-items: center;
+}
+
+.teamgroup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.teamlogo img {
+    width: 28px;
+    height: 28px;
+    border: 2px solid #fff;
+    border-radius: 18px;
+}
+
+.teamname {
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+}
+
+.team-info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-left: 15px;
+    margin-bottom: 10px;
+    font-style: italic;
+    line-height: 27px;
+    color: white;
+}
+
+.team-info strong {
+    color: white;
+    font-size: 25px;
+    padding-left: 0px;
+}
+
+.team.info>div {
+    color: black;
+    opacity: 0.5;
+    font-size: 10px;
+}
+
+.info-2 {
+    padding-right: 15px;
+}
+
+.main-img {
+    justify-content: center;
+    display: grid;
+    margin-top: 20px;
+}
+
+.summary {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 17px;
+}
+
+.summary-card {
+    max-width: 800px;
+    background-color: #ffffff;
+    margin: 20px 0px 0px 0px;
+    border-radius: 3px;
+    text-align: justify;
+    word-spacing: 2px;
+    box-shadow: 0px 0px 2px rgb(83, 81, 81);
+    border: 1px solid rgb(191, 188, 188);
+}
+
+.content {
+    padding: 10px 20px;
+    color: rgb(106, 103, 103);
+
+}
+
+.head-1 {
+    color: #484848;
+    margin: 0px;
+}
+
+.head-1 span {
+    color: rgb(117, 116, 116);
+    font-size: 13px;
+    font-weight: lighter;
+}
+
+.head-2 {
+    margin: 7px 0px 17px 0px;
+    color: #535252;
+}
+
+.match-info p {
+    word-spacing: 5px;
+    margin: 0px;
+    padding: 0px 8px 15px;
+}
+
+.box-img {
+    width: 100%;
+    text-align: center;
+}
+.match-info .box-img img {
+    padding: 10px 0px;;
+}
+.players-info {
+    margin-top: 30px;
+    max-width: 400px;
+    border-radius: 5px;
+    text-align: justify;
+}
+
+.player {
+    background: rgb(152, 155, 187) url('/img/liveBlog-Web.png') no-repeat;
+    min-width: 400px;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 3px;
+    padding: 10px 13px;
+    color: rgb(46, 44, 44);
+    box-sizing: border-box;
+    box-shadow: 0px 0px 4px rgb(152, 155, 187);
+    margin-bottom: 20px;
+    transition: all 1s linear(0 0%, 0.22 2.1%, 0.86 6.5%, 1.11 8.6%, 1.3 10.7%, 1.35 11.8%, 1.37 12.9%, 1.37 13.7%, 1.36 14.5%, 1.32 16.2%, 1.03 21.8%, 0.94 24%, 0.89 25.9%, 0.88 26.85%, 0.87 27.8%, 0.87 29.25%, 0.88 30.7%, 0.91 32.4%, 0.98 36.4%, 1.01 38.3%, 1.04 40.5%, 1.05 42.7%, 1.05 44.1%, 1.04 45.7%, 1 53.3%, 0.99 55.4%, 0.98 57.5%, 0.99 60.7%, 1 68.1%, 1.01 72.2%, 1 86.7%, 1 100%) 
+    0.3s;
+}
+
+.player-res {
+    width: 100%;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.player-details {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.player-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+}
+
+.player-name .name {
+    padding-bottom: 7px;
+    font-size: 16px;
+    color: #ffffff;
+    opacity: 0.8;
+}
+
+.player-stats {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.player-stats span {
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+.player-logo img {
+    width: 80px;
+    margin-right: 10px;
+    background-color: #cec9c9;
+    border: 1.7px solid rgb(210, 212, 232);
+    border-radius: 18px;
+}
+
+.about-player {
+    padding: 0px 10px;
+    word-spacing: 3px;
+    font-style: italic;
+    color: rgb(94, 93, 93);
+}
+
+.player:hover {
+    scale: calc(1.1);
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #011e29;
+    color: #fff;
+    margin-top: 40px;
+}
